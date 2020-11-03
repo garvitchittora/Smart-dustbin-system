@@ -3,22 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package oom_project;
-import java.util.HashMap;
+package javaapplication5;
+
 /**
  *
  * @author HP
  */
-public class OOM_Project {
+public class JavaApplication5 {
 
     /**
      * @param args the command line arguments
      */
-    public static HashMap<String, String> Dustbinhash = new HashMap<String, String>();
-    
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        
     }
+    
 }

@@ -15,6 +15,7 @@ import static java.nio.channels.AsynchronousFileChannel.open;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import static oom_project.OOM_Project.Dustbinhash;
 
 /**
  *
@@ -40,7 +41,7 @@ public class authority_login extends javax.swing.JFrame {
         ImageIcon scaledIcon = new ImageIcon(imgscale); 
         img_label.setIcon(scaledIcon);
         
-        
+            
         
     }
 
@@ -266,9 +267,20 @@ public class authority_login extends javax.swing.JFrame {
        String pass = password.getText();
        String user = username.getText();
        
-       String real_id = "IIITA";
-       String real_pass = "1234abcd";
-       String real_user = "kshitij";
+       String real_id = "garvit";
+       String real_pass = "garvit";
+       String real_user = "garvit";
+       oom_project.OOM_Project.Dustbinhash.put("England", "London");
+        oom_project.OOM_Project.Dustbinhash.put("Germany", "Berlin");
+        oom_project.OOM_Project.Dustbinhash.put("Norway", "Oslo");
+        oom_project.OOM_Project.Dustbinhash.put("USA", "Washington DC");
+for (String i : oom_project.OOM_Project.Dustbinhash.keySet()) {
+    if(i=="England"){
+        oom_project.OOM_Project.Dustbinhash.put("England","garvit");
+        System.out.println(oom_project.OOM_Project.Dustbinhash);
+    }
+}
+
        if(id.trim().equalsIgnoreCase(real_id) && pass.trim().equals(real_pass) && user.trim().equals(real_user))
        {
            autho.setVisible(true);
