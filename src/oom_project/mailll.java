@@ -50,8 +50,8 @@ public class mailll extends javax.swing.JFrame {
      */
    public void sendMail(String id, String sent){
        String ToEmail = sent;
-        String FromEmail = "shivam12345kr@gmail.com";
-        String FromEmailPassword = "kr12345shivam";
+        String FromEmail = "nullbot44@gmail.com";
+        String FromEmailPassword = "1234abcd@null";
         String Subjects = "CLEAN DUSTBIN MAIL";
         
         Properties properties = new Properties();
@@ -74,7 +74,7 @@ public class mailll extends javax.swing.JFrame {
             message.setFrom(new InternetAddress(FromEmail));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(ToEmail));
             message.setSubject(Subjects);
-            message.setText("The incharge of the VAN "+ id + " is requested to clean the Dustbin in the location: NORTH"+"\n"+"This mail is sent using JAVA.");
+            message.setText("The incharge of the VAN "+ id + " is requested to clean the Dustbin in the location: CC3 Building"+"\n"+"This mail is sent using JAVA.");
             Transport.send(message);
             
         }catch(Exception ex){
@@ -192,7 +192,7 @@ public class mailll extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        sendMail("1","shivam12345kr@gmail.com");
+        sendMail("1","nullbot44@gmail.com");
         TestSleepMethod1 t1=new TestSleepMethod1();
         t1.start();
     }//GEN-LAST:event_jButton1ActionPerformed

@@ -21,6 +21,7 @@ public class home_page extends javax.swing.JFrame {
 
     new_login2 login = new new_login2();
     user_first user1 = new user_first();
+    authority_login vannn = new authority_login();
     //mailll complain = new mailll();
     
     /**
@@ -107,6 +108,12 @@ public class home_page extends javax.swing.JFrame {
         jLabel2.setText("AUTHORITY");
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8_driver_80px.png"))); // NOI18N
+        jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
 
         jLabel8.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -185,6 +192,12 @@ public class home_page extends javax.swing.JFrame {
         login.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+        vannn.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jLabel7MouseClicked
 
     /**
      * @param args the command line arguments

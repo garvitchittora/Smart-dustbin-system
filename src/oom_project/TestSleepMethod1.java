@@ -19,7 +19,7 @@ import oom_project.mailll;
     int level = 10;
     if(level !=0){
     mailll t1=new mailll();
-    t1.sendMail("1","shivam12345kr@gmail.com");
+    t1.sendMail("1","nullbot44@gmail.com");
     
   }  }
  }

@@ -30,8 +30,7 @@ public class authority_login extends javax.swing.JFrame {
         scaleImage();
     }
     
-    Authority autho = new Authority();
-    //authority_login_1 signup = new authority_login_1();
+    van_incharge vann = new van_incharge();
     
     public void scaleImage(){
         ImageIcon icon = new ImageIcon("C:\\Users\\HP\\Downloads\\sdsd.png");
@@ -84,7 +83,7 @@ public class authority_login extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("AUTHORITY MEMBERS LOGIN ");
+        jLabel2.setText("VAN_INCHARGE LOGIN ");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -231,7 +230,7 @@ public class authority_login extends javax.swing.JFrame {
        
        if(pass.trim().equals(real_pass) && user.trim().equals(real_user))
        {
-           autho.setVisible(true);
+           vann.setVisible(true);
            dispose();
        }
        else
