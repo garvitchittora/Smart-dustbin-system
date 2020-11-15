@@ -151,6 +151,10 @@ public class van_register extends javax.swing.JFrame {
         String vname = tf2.getText();
         String vemail = tf3.getText();
         JOptionPane.showMessageDialog(this, "VAN Details have been REGISTERED SUCCESSFULLY !!");
+        
+        tf1.setText("");
+        tf2.setText("");
+        tf3.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

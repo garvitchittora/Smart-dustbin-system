@@ -5,17 +5,16 @@
  */
 package oom_project;
 
-import java.awt.Desktop;
+//import java.awt.Desktop;
 import javax.swing.ImageIcon;
 import java.awt.Image;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import static java.nio.channels.AsynchronousFileChannel.open;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+//import java.io.IOException;
+//import java.net.URI;
+//import java.net.URISyntaxException;
+//import static java.nio.channels.AsynchronousFileChannel.open;
+//import java.util.logging.Level;
+//import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import static oom_project.OOM_Project.Dustbinhash;
 
 /**
  *
@@ -32,6 +31,7 @@ public class authority_login extends javax.swing.JFrame {
     }
     
     Authority autho = new Authority();
+    //authority_login_1 signup = new authority_login_1();
     
     public void scaleImage(){
         ImageIcon icon = new ImageIcon("C:\\Users\\HP\\Downloads\\sdsd.png");
@@ -41,7 +41,7 @@ public class authority_login extends javax.swing.JFrame {
         ImageIcon scaledIcon = new ImageIcon(imgscale); 
         img_label.setIcon(scaledIcon);
         
-            
+        
         
     }
 
@@ -58,18 +58,15 @@ public class authority_login extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         img_label = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        login = new javax.swing.JTextField();
         username = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         password = new javax.swing.JPasswordField();
-        jLabel6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sign up");
@@ -89,33 +86,12 @@ public class authority_login extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("AUTHORITY MEMBERS LOGIN ");
 
-        jLabel7.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("To visit our Website");
-
-        jLabel8.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("\" Click Here \" ");
-        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel8MouseClicked(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(80, 80, 80)
                         .addComponent(img_label, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -131,11 +107,7 @@ public class authority_login extends javax.swing.JFrame {
                 .addComponent(img_label, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 182, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addContainerGap(216, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2);
@@ -175,48 +147,38 @@ public class authority_login extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 102, 102));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Sign Up");
+        jLabel3.setText("Login");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(410, 60, 140, 70);
+        jLabel3.setBounds(400, 60, 140, 70);
 
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 51, 51));
         jLabel4.setText("Username");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(380, 310, 100, 15);
-
-        login.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        login.setForeground(new java.awt.Color(51, 51, 51));
-        login.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 51)));
-        jPanel1.add(login);
-        login.setBounds(380, 180, 190, 30);
+        jLabel4.setBounds(380, 140, 100, 15);
 
         username.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         username.setForeground(new java.awt.Color(51, 51, 51));
         username.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 51)));
         jPanel1.add(username);
-        username.setBounds(380, 330, 190, 30);
+        username.setBounds(380, 160, 190, 30);
 
         jLabel5.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(51, 51, 51));
         jLabel5.setText("Password");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(380, 240, 100, 15);
+        jLabel5.setBounds(380, 200, 100, 15);
 
         password.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         password.setForeground(new java.awt.Color(51, 51, 51));
         password.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 51)));
         jPanel1.add(password);
-        password.setBounds(380, 260, 190, 30);
+        password.setBounds(380, 220, 190, 30);
 
-        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel6.setText("Login ID");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(380, 160, 100, 15);
-
+        jButton1.setBackground(new java.awt.Color(0, 102, 204));
         jButton1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jButton1.setText("Sign Up");
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Login");
         jButton1.setBorder(null);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -225,20 +187,31 @@ public class authority_login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(420, 400, 130, 30);
+        jButton1.setBounds(410, 290, 130, 30);
+
+        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("New User?  SIGN UP");
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(370, 350, 200, 20);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 617, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 456, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(617, 457));
+        setSize(new java.awt.Dimension(617, 456));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -247,53 +220,34 @@ public class authority_login extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jLabel1MouseClicked
 
-    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
-        // TODO add your handling code here:
-        Desktop d = Desktop.getDesktop();
-        try {
-            try {
-                d.browse(new URI("www.google.com"));
-            } catch (IOException ex) {
-                Logger.getLogger(authority_login.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        } catch (URISyntaxException ex) {
-            Logger.getLogger(authority_login.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jLabel8MouseClicked
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-       String id = login.getText();
+       
        String pass = password.getText();
        String user = username.getText();
        
-       String real_id = "garvit";
-       String real_pass = "garvit";
-       String real_user = "garvit";
-       oom_project.OOM_Project.Dustbinhash.put("England", "London");
-        oom_project.OOM_Project.Dustbinhash.put("Germany", "Berlin");
-        oom_project.OOM_Project.Dustbinhash.put("Norway", "Oslo");
-        oom_project.OOM_Project.Dustbinhash.put("USA", "Washington DC");
-for (String i : oom_project.OOM_Project.Dustbinhash.keySet()) {
-    if(i=="England"){
-        oom_project.OOM_Project.Dustbinhash.put("England","garvit");
-        System.out.println(oom_project.OOM_Project.Dustbinhash);
-    }
-}
-
-       if(id.trim().equalsIgnoreCase(real_id) && pass.trim().equals(real_pass) && user.trim().equals(real_user))
+       String real_user = "kshitij";
+       String real_pass = "1234abcd";
+       
+       if(pass.trim().equals(real_pass) && user.trim().equals(real_user))
        {
            autho.setVisible(true);
            dispose();
        }
        else
        {
-           JOptionPane.showMessageDialog(null,"Invalid username or password or ID","Access Denied",JOptionPane.ERROR_MESSAGE);
-           login.setText("");
+           JOptionPane.showMessageDialog(null,"Invalid username or password","Access Denied",JOptionPane.ERROR_MESSAGE);
+          
            password.setText("");
            username.setText("");
        }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        // TODO add your handling code here:
+        //signup.setVisible(true);
+        //dispose();
+    }//GEN-LAST:event_jLabel6MouseClicked
 
     /**
      * @param args the command line arguments
@@ -339,12 +293,9 @@ for (String i : oom_project.OOM_Project.Dustbinhash.keySet()) {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField login;
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField username;
     // End of variables declaration//GEN-END:variables
