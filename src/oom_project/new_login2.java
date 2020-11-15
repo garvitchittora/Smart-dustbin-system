@@ -208,7 +208,7 @@ public class new_login2 extends javax.swing.JFrame {
        
        String real_user = "kshitij";
        String real_pass = "1234abcd";
-       
+
        if(pass.trim().equals(real_pass) && user.trim().equals(real_user))
        {
            author.setVisible(true);
@@ -252,7 +252,42 @@ public class new_login2 extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(new_login2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
+        
+        Van v = new Van();
+        v.setVanNumber("6142");
+        v.setPhoneNumber("9509267434");
+        v.setEmail("g@gmail.com");
+        v.setName("Garvit Chittora");
+        v.setUserName("garvitchittora");
+        v.setPass("garvitpass");     
+        v.display();
+        oom_project.OOM_Project.vanlist.add(v);
+        System.out.println(oom_project.OOM_Project.vanlist.get(0)); 
 
+        
+        Dustbin d=new Dustbin();
+        d.setId(1);
+        d.setLocation("BH5 1 floor");
+        d.setWeight(1.25);
+        d.setHeight(3.25);
+        d.setLevel(50);
+        d.setLastEmptyDate("11-12-2020");
+        d.display();
+        oom_project.OOM_Project.dustbinlist.add(d);
+        System.out.println("Hello "+oom_project.OOM_Project.dustbinlist.get(0).level); 
+        
+        Person p=new Person();
+        p.setPhoneNumber("9509267436");
+        p.setEmail("gg@gmail.com");
+        p.setName("Garvit C");
+        p.setUserName("garvitc");
+        p.setPass("garvitpassword");     
+        p.display();
+        oom_project.OOM_Project.authlist.add(p);
+        System.out.println(oom_project.OOM_Project.authlist.get(0)); 
+
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
