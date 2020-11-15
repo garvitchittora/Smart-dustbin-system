@@ -25,22 +25,6 @@ import oom_project.TestSleepMethod1;
  * @author HP
  */
 
-
-class Dustbin{
-        int id;
-        int level;
-        Dustbin(int i, int l){
-            id = i;
-            level = l;
-        }
-        public void showData(){
-            System.out.print("Dustbin ID = "+id+" "+"Level = "+level);
-            System.out.println();
-        }
-    }
-  
-    
-
 public class mailll extends javax.swing.JFrame {
     
        
@@ -202,16 +186,6 @@ public class mailll extends javax.swing.JFrame {
      */
    
         public static void main(String args[]) throws java.lang.Exception {
-            Dustbin[] obj = new Dustbin[10];
-            obj[0] = new Dustbin(1,90);
-            obj[1] = new Dustbin(2,80);
-            
-            obj[0].showData();
-            
-            
-        
-        
-        
         
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
